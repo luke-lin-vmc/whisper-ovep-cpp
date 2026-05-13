@@ -1,0 +1,58 @@
+C:\GitHub\whisper-ovep-cpp\build>cmake --install . --config Release
+-- Installing: C:/GitHub/whisper-ovep-cpp/package/./whisper_onnx.exe
+-- Installing: C:/GitHub/whisper-ovep-cpp/package/./README.md
+-- Installing: C:/GitHub/whisper-ovep-cpp/package/./how_are_you_doing_today.wav
+-- Installing: C:/GitHub/whisper-ovep-cpp/package/./simple_run.bat
+-- Installing: C:/GitHub/whisper-ovep-cpp/package/./small-decoder.onnx
+-- Installing: C:/GitHub/whisper-ovep-cpp/package/./small-encoder.onnx
+-- Installing: C:/GitHub/whisper-ovep-cpp/package/./small-tokens.txt
+-- Installing: C:/GitHub/whisper-ovep-cpp/package/./kaldi-native-fbank-core.dll
+-- Installing: C:/GitHub/whisper-ovep-cpp/package/./sndfile.dll
+-- Installing: C:/GitHub/whisper-ovep-cpp/package/./asmjit.dll
+-- Installing: C:/GitHub/whisper-ovep-cpp/package/./c10.dll
+-- Installing: C:/GitHub/whisper-ovep-cpp/package/./fbgemm.dll
+-- Installing: C:/GitHub/whisper-ovep-cpp/package/./libiomp5md.dll
+-- Installing: C:/GitHub/whisper-ovep-cpp/package/./libiompstubs5md.dll
+-- Installing: C:/GitHub/whisper-ovep-cpp/package/./torch.dll
+-- Installing: C:/GitHub/whisper-ovep-cpp/package/./torch_cpu.dll
+-- Installing: C:/GitHub/whisper-ovep-cpp/package/./torch_global_deps.dll
+-- Installing: C:/GitHub/whisper-ovep-cpp/package/./uv.dll
+-- Installing: C:/GitHub/whisper-ovep-cpp/package/./DirectML.dll
+-- Installing: C:/GitHub/whisper-ovep-cpp/package/./Microsoft.Windows.AI.MachineLearning.dll
+-- Installing: C:/GitHub/whisper-ovep-cpp/package/./onnxruntime.dll
+
+C:\GitHub\whisper-ovep-cpp\build>
+C:\GitHub\whisper-ovep-cpp\build>
+C:\GitHub\whisper-ovep-cpp\build>dir ..\package /o
+ Volume in drive C has no label.
+ Volume Serial Number is 6E19-CE53
+
+ Directory of C:\GitHub\whisper-ovep-cpp\package
+
+05/12/2026  03:41 PM    <DIR>          .
+05/12/2026  03:41 PM    <DIR>          ..
+07/23/2025  03:35 PM           367,104 asmjit.dll
+07/23/2025  03:42 PM         1,046,528 c10.dll
+04/23/2026  07:33 AM        18,710,800 DirectML.dll
+07/23/2025  03:35 PM         5,721,600 fbgemm.dll
+05/08/2026  03:58 PM            78,806 how_are_you_doing_today.wav
+05/08/2026  03:58 PM           112,128 kaldi-native-fbank-core.dll
+07/23/2025  03:29 PM         1,613,680 libiomp5md.dll
+07/23/2025  03:29 PM            43,888 libiompstubs5md.dll
+04/23/2026  07:33 AM           890,400 Microsoft.Windows.AI.MachineLearning.dll
+04/23/2026  07:33 AM        21,670,840 onnxruntime.dll
+05/08/2026  04:43 PM            10,126 README.md
+05/08/2026  04:00 PM                54 simple_run.bat
+05/07/2026  12:00 PM       557,868,083 small-decoder.onnx
+05/07/2026  12:00 PM       409,406,960 small-encoder.onnx
+05/07/2026  11:59 AM           866,987 small-tokens.txt
+05/08/2026  03:58 PM         2,603,520 sndfile.dll
+07/23/2025  04:47 PM             9,728 torch.dll
+07/23/2025  04:46 PM       255,948,800 torch_cpu.dll
+07/23/2025  03:42 PM             9,728 torch_global_deps.dll
+12/18/2020  02:53 PM           195,072 uv.dll
+05/12/2026  03:38 PM           438,784 whisper_onnx.exe
+              21 File(s)  1,277,613,616 bytes
+               2 Dir(s)  520,396,967,936 bytes free
+
+C:\GitHub\whisper-ovep-cpp\build>

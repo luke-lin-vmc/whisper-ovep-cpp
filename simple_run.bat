@@ -1,0 +1,1 @@
+whisper_onnx.exe how_are_you_doing_today.wav small CPU
