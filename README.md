@@ -31,6 +31,7 @@ Log file [export_model.log](https://github.com/luke-lin-vmc/whisper-ovep-cpp/blo
 Make sure the internet connection is working. The build script will download [Microsoft.WindowsAppSDK.ML v2.0.300](https://www.nuget.org/packages/Microsoft.WindowsAppSDK.ML/2.0.300/) and [LibTorch v2.8.0](https://download.pytorch.org/libtorch/cpu/libtorch-win-shared-with-deps-2.8.0%2Bcpu.zip) from internet
 
 ```
+cd ..
 mkdir build
 cd build 
 cmake ..
