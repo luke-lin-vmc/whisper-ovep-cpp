@@ -1,5 +1,5 @@
 # About whisper-ovep-cpp (WindowsML 2.0)
-This C++ pipeline is to show how to run Whisper on Intel CPU/GPU/NPU thru [Windows ML](https://learn.microsoft.com/en-us/windows/ai/new-windows-ml/overview) + [OpenVINO Execution Provider](https://onnxruntime.ai/docs/execution-providers/OpenVINO-ExecutionProvider.html)
+This C++ pipeline is to show how to run Whisper on Intel CPU/GPU/NPU thru [Windows ML](https://learn.microsoft.com/en-us/windows/ai/new-windows-ml/overview) + [OpenVINO Execution Provider](https://learn.microsoft.com/en-us/windows/ai/new-windows-ml/supported-execution-providers?tabs=winml2#openvino-intel)
 
 This implementation is derived from sherpa-onnx project
 https://github.com/k2-fsa/sherpa-onnx/tree/master/scripts/whisper
