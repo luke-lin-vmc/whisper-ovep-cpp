@@ -6,8 +6,8 @@ https://github.com/k2-fsa/sherpa-onnx/tree/master/scripts/whisper
 
 # Features
 This pipeline supports WindowsML 2.0
-* No need to install ONNX runtime (already built-in in Windows 11 24H2 or later)
-* No need to install OpenVINO Execution Provider (already built-in in Windows 11 24H2 or later, if the system is with INTEL CPU)
+* No need to install ONNX runtime separately as Windows ML already contains ONNX Runtime
+* No need to install OpenVINO Execution Provider manually as Windows ML can download and manage it automatically.
 
 # Quick Steps
 ## Prepare models
@@ -28,7 +28,7 @@ small-tokens.txt
 Log file [export_model.log](https://github.com/luke-lin-vmc/whisper-ovep-cpp/blob/main/log/export_model.log) is provided for reference
 
 ## Build
-Make sure the internet connection is working. The build script will download [Microsoft.WindowsAppSDK.ML v2.0.300](https://www.nuget.org/packages/Microsoft.WindowsAppSDK.ML/2.0.300/) and [LibTorch v2.8.0](https://download.pytorch.org/libtorch/cpu/libtorch-win-shared-with-deps-2.8.0%2Bcpu.zip) from internet
+Make sure the internet connection is working. The build script will download [Microsoft.WindowsAppSDK.ML](https://www.nuget.org/packages/Microsoft.WindowsAppSDK.ML) and [LibTorch v2.8.0](https://download.pytorch.org/libtorch/cpu/libtorch-win-shared-with-deps-2.8.0%2Bcpu.zip) from internet
 
 ```
 cd ..
@@ -133,7 +133,7 @@ Whisper decoder model: small-decoder.onnx
 Whisper tokens: small-tokens.txt
 Inference device: AUTO
 Provider: OpenVINOExecutionProvider
-  Library: C:\Program Files\WindowsApps\MicrosoftCorporationII.WinML.Intel.OpenVINO.EP.1.8_1.8.74.0_x64__8wekyb3d8bbwe\ExecutionProvider\onnxruntime_providers_openvino_plugin.dll
+  Library: C:\Program Files\WindowsApps\MicrosoftCorporationII.WinML.Intel.OpenVINO.EP.1.8_1.8.95.0_x64__8wekyb3d8bbwe\ExecutionProvider\onnxruntime_providers_openvino_plugin.dll
   Registered!
 
 Available EP devices (8):
@@ -154,25 +154,27 @@ Encoder input name 0: mel
 Encoder output name 0: n_layer_cross_k
 Encoder output name 1: n_layer_cross_v
 Decoder path: small-decoder.onnx
-Encoder processing time: 239 ms
-Decoder processing time: 125 ms
+Encoder processing time: 234 ms
+Decoder processing time: 144 ms
 Detected language: en
-Decoder processing time: 31 ms
-Decoder processing time: 30 ms
-Decoder processing time: 32 ms
-Decoder processing time: 29 ms
-Decoder processing time: 29 ms
-Decoder processing time: 29 ms
-Decoder processing time: 27 ms
-Decoder processing time: 25 ms
+Decoder processing time: 49 ms
+Decoder processing time: 37 ms
+Decoder processing time: 44 ms
+Decoder processing time: 34 ms
+Decoder processing time: 43 ms
 Decoder processing time: 35 ms
-Decoder processing time: 27 ms
+Decoder processing time: 37 ms
+Decoder processing time: 32 ms
+Decoder processing time: 37 ms
+Decoder processing time: 32 ms
 
 Transcribed:
  How are you doing today?
 
 Processing complete. Exiting.
 Successfully unregistered: OpenVINOExecutionProvider
+
+C:\GitHub\whisper-ovep-cpp\package>
 ```
 Full log [run.log](https://github.com/luke-lin-vmc/whisper-ovep-cpp/blob/main/log/run.log) is provided for reference
 
@@ -195,6 +197,3 @@ The test was done on a ```Intel(R) Core(TM) Ultra 5 238V (Lunar Lake)``` system,
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;Pileline worked fine but the EN speech was misdetected as PL<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**&nbsp;Pileline didn't worked due to insufficient memory
-
-## Known issues
-* Only Arc iGPUs (Meteor Lake, Lunar Lake, Panther Lake and Arrow Lake H-series) are supported. Running on unsupported iGPU (such like Iris Xe or UHD) may lead to incorrect output, such as "!!!!!!!!!!!!!!".

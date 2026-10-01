@@ -8,7 +8,7 @@ Whisper decoder model: small-decoder.onnx
 Whisper tokens: small-tokens.txt
 Inference device: CPU
 Provider: OpenVINOExecutionProvider
-  Library: C:\Program Files\WindowsApps\MicrosoftCorporationII.WinML.Intel.OpenVINO.EP.1.8_1.8.74.0_x64__8wekyb3d8bbwe\ExecutionProvider\onnxruntime_providers_openvino_plugin.dll
+  Library: C:\Program Files\WindowsApps\MicrosoftCorporationII.WinML.Intel.OpenVINO.EP.1.8_1.8.95.0_x64__8wekyb3d8bbwe\ExecutionProvider\onnxruntime_providers_openvino_plugin.dll
   Registered!
 
 Available EP devices (8):
@@ -28,19 +28,19 @@ Encoder input name 0: mel
 Encoder output name 0: n_layer_cross_k
 Encoder output name 1: n_layer_cross_v
 Decoder path: small-decoder.onnx
-Encoder processing time: 1130 ms
-Decoder processing time: 124 ms
+Encoder processing time: 1628 ms
+Decoder processing time: 161 ms
 Detected language: en
-Decoder processing time: 73 ms
-Decoder processing time: 73 ms
-Decoder processing time: 87 ms
-Decoder processing time: 98 ms
-Decoder processing time: 75 ms
-Decoder processing time: 74 ms
-Decoder processing time: 74 ms
-Decoder processing time: 76 ms
-Decoder processing time: 76 ms
-Decoder processing time: 80 ms
+Decoder processing time: 97 ms
+Decoder processing time: 100 ms
+Decoder processing time: 123 ms
+Decoder processing time: 99 ms
+Decoder processing time: 105 ms
+Decoder processing time: 99 ms
+Decoder processing time: 105 ms
+Decoder processing time: 94 ms
+Decoder processing time: 84 ms
+Decoder processing time: 83 ms
 
 Transcribed:
  How are you doing today?
@@ -51,13 +51,14 @@ Successfully unregistered: OpenVINOExecutionProvider
 C:\GitHub\whisper-ovep-cpp\package>
 C:\GitHub\whisper-ovep-cpp\package>
 C:\GitHub\whisper-ovep-cpp\package>
+C:\GitHub\whisper-ovep-cpp\package>
 C:\GitHub\whisper-ovep-cpp\package>whisper_onnx.exe how_are_you_doing_today.wav small GPU
 Whisper encoder model: small-encoder.onnx
 Whisper decoder model: small-decoder.onnx
 Whisper tokens: small-tokens.txt
 Inference device: GPU
 Provider: OpenVINOExecutionProvider
-  Library: C:\Program Files\WindowsApps\MicrosoftCorporationII.WinML.Intel.OpenVINO.EP.1.8_1.8.74.0_x64__8wekyb3d8bbwe\ExecutionProvider\onnxruntime_providers_openvino_plugin.dll
+  Library: C:\Program Files\WindowsApps\MicrosoftCorporationII.WinML.Intel.OpenVINO.EP.1.8_1.8.95.0_x64__8wekyb3d8bbwe\ExecutionProvider\onnxruntime_providers_openvino_plugin.dll
   Registered!
 
 Available EP devices (8):
@@ -77,19 +78,19 @@ Encoder input name 0: mel
 Encoder output name 0: n_layer_cross_k
 Encoder output name 1: n_layer_cross_v
 Decoder path: small-decoder.onnx
-Encoder processing time: 92 ms
-Decoder processing time: 69 ms
+Encoder processing time: 95 ms
+Decoder processing time: 87 ms
 Detected language: en
-Decoder processing time: 40 ms
-Decoder processing time: 39 ms
-Decoder processing time: 40 ms
-Decoder processing time: 40 ms
-Decoder processing time: 40 ms
 Decoder processing time: 41 ms
-Decoder processing time: 39 ms
-Decoder processing time: 38 ms
-Decoder processing time: 39 ms
-Decoder processing time: 38 ms
+Decoder processing time: 43 ms
+Decoder processing time: 42 ms
+Decoder processing time: 42 ms
+Decoder processing time: 41 ms
+Decoder processing time: 42 ms
+Decoder processing time: 41 ms
+Decoder processing time: 41 ms
+Decoder processing time: 43 ms
+Decoder processing time: 42 ms
 
 Transcribed:
  How are you doing today?
@@ -100,14 +101,13 @@ Successfully unregistered: OpenVINOExecutionProvider
 C:\GitHub\whisper-ovep-cpp\package>
 C:\GitHub\whisper-ovep-cpp\package>
 C:\GitHub\whisper-ovep-cpp\package>
-C:\GitHub\whisper-ovep-cpp\package>
 C:\GitHub\whisper-ovep-cpp\package>whisper_onnx.exe how_are_you_doing_today.wav small NPU
 Whisper encoder model: small-encoder.onnx
 Whisper decoder model: small-decoder.onnx
 Whisper tokens: small-tokens.txt
 Inference device: NPU
 Provider: OpenVINOExecutionProvider
-  Library: C:\Program Files\WindowsApps\MicrosoftCorporationII.WinML.Intel.OpenVINO.EP.1.8_1.8.74.0_x64__8wekyb3d8bbwe\ExecutionProvider\onnxruntime_providers_openvino_plugin.dll
+  Library: C:\Program Files\WindowsApps\MicrosoftCorporationII.WinML.Intel.OpenVINO.EP.1.8_1.8.95.0_x64__8wekyb3d8bbwe\ExecutionProvider\onnxruntime_providers_openvino_plugin.dll
   Registered!
 
 Available EP devices (8):
@@ -127,68 +127,68 @@ Encoder input name 0: mel
 Encoder output name 0: n_layer_cross_k
 Encoder output name 1: n_layer_cross_v
 Decoder path: small-decoder.onnx
-Encoder processing time: 206 ms
-Decoder processing time: 60 ms
+Encoder processing time: 180 ms
+Decoder processing time: 52 ms
 Detected language: en
-Decoder processing time: 26 ms
-Decoder processing time: 29 ms
-Decoder processing time: 27 ms
-Decoder processing time: 26 ms
-Decoder processing time: 27 ms
-Decoder processing time: 24 ms
-Decoder processing time: 28 ms
-Decoder processing time: 26 ms
-Decoder processing time: 24 ms
-Decoder processing time: 27 ms
-
-Transcribed:
- How are you doing today?
-
-Processing complete. Exiting.
-Successfully unregistered: OpenVINOExecutionProvider
-
-C:\GitHub\whisper-ovep-cpp\package>
-C:\GitHub\whisper-ovep-cpp\package>
-C:\GitHub\whisper-ovep-cpp\package>
-C:\GitHub\whisper-ovep-cpp\package>whisper_onnx.exe how_are_you_doing_today.wav small NPU
-Whisper encoder model: small-encoder.onnx
-Whisper decoder model: small-decoder.onnx
-Whisper tokens: small-tokens.txt
-Inference device: NPU
-Provider: OpenVINOExecutionProvider
-  Library: C:\Program Files\WindowsApps\MicrosoftCorporationII.WinML.Intel.OpenVINO.EP.1.8_1.8.74.0_x64__8wekyb3d8bbwe\ExecutionProvider\onnxruntime_providers_openvino_plugin.dll
-  Registered!
-
-Available EP devices (8):
-  - CPUExecutionProvider
-  - DmlExecutionProvider
-  - OpenVINOExecutionProvider
-  - OpenVINOExecutionProvider
-  - OpenVINOExecutionProvider
-  - OpenVINOExecutionProvider.AUTO
-  - OpenVINOExecutionProvider.AUTO
-  - OpenVINOExecutionProvider.AUTO
-
-Registered 1 certified provider(s).
-Inference device: OpenVINO EP with device = NPU
-Encoder path: small-encoder.onnx
-Encoder input name 0: mel
-Encoder output name 0: n_layer_cross_k
-Encoder output name 1: n_layer_cross_v
-Decoder path: small-decoder.onnx
-Encoder processing time: 207 ms
-Decoder processing time: 107 ms
-Detected language: en
-Decoder processing time: 27 ms
+Decoder processing time: 35 ms
+Decoder processing time: 32 ms
+Decoder processing time: 32 ms
 Decoder processing time: 30 ms
+Decoder processing time: 31 ms
+Decoder processing time: 30 ms
+Decoder processing time: 29 ms
 Decoder processing time: 28 ms
-Decoder processing time: 27 ms
-Decoder processing time: 27 ms
-Decoder processing time: 26 ms
-Decoder processing time: 26 ms
-Decoder processing time: 25 ms
-Decoder processing time: 25 ms
-Decoder processing time: 25 ms
+Decoder processing time: 30 ms
+Decoder processing time: 31 ms
+
+Transcribed:
+ How are you doing today?
+
+Processing complete. Exiting.
+Successfully unregistered: OpenVINOExecutionProvider
+
+C:\GitHub\whisper-ovep-cpp\package>
+C:\GitHub\whisper-ovep-cpp\package>
+C:\GitHub\whisper-ovep-cpp\package>
+C:\GitHub\whisper-ovep-cpp\package>whisper_onnx.exe how_are_you_doing_today.wav small NPU
+Whisper encoder model: small-encoder.onnx
+Whisper decoder model: small-decoder.onnx
+Whisper tokens: small-tokens.txt
+Inference device: NPU
+Provider: OpenVINOExecutionProvider
+  Library: C:\Program Files\WindowsApps\MicrosoftCorporationII.WinML.Intel.OpenVINO.EP.1.8_1.8.95.0_x64__8wekyb3d8bbwe\ExecutionProvider\onnxruntime_providers_openvino_plugin.dll
+  Registered!
+
+Available EP devices (8):
+  - CPUExecutionProvider
+  - DmlExecutionProvider
+  - OpenVINOExecutionProvider
+  - OpenVINOExecutionProvider
+  - OpenVINOExecutionProvider
+  - OpenVINOExecutionProvider.AUTO
+  - OpenVINOExecutionProvider.AUTO
+  - OpenVINOExecutionProvider.AUTO
+
+Registered 1 certified provider(s).
+Inference device: OpenVINO EP with device = NPU
+Encoder path: small-encoder.onnx
+Encoder input name 0: mel
+Encoder output name 0: n_layer_cross_k
+Encoder output name 1: n_layer_cross_v
+Decoder path: small-decoder.onnx
+Encoder processing time: 209 ms
+Decoder processing time: 96 ms
+Detected language: en
+Decoder processing time: 36 ms
+Decoder processing time: 33 ms
+Decoder processing time: 32 ms
+Decoder processing time: 31 ms
+Decoder processing time: 31 ms
+Decoder processing time: 30 ms
+Decoder processing time: 30 ms
+Decoder processing time: 30 ms
+Decoder processing time: 31 ms
+Decoder processing time: 30 ms
 
 Transcribed:
  How are you doing today?
@@ -205,7 +205,7 @@ Whisper decoder model: small-decoder.onnx
 Whisper tokens: small-tokens.txt
 Inference device: AUTO
 Provider: OpenVINOExecutionProvider
-  Library: C:\Program Files\WindowsApps\MicrosoftCorporationII.WinML.Intel.OpenVINO.EP.1.8_1.8.74.0_x64__8wekyb3d8bbwe\ExecutionProvider\onnxruntime_providers_openvino_plugin.dll
+  Library: C:\Program Files\WindowsApps\MicrosoftCorporationII.WinML.Intel.OpenVINO.EP.1.8_1.8.95.0_x64__8wekyb3d8bbwe\ExecutionProvider\onnxruntime_providers_openvino_plugin.dll
   Registered!
 
 Available EP devices (8):
@@ -226,19 +226,19 @@ Encoder input name 0: mel
 Encoder output name 0: n_layer_cross_k
 Encoder output name 1: n_layer_cross_v
 Decoder path: small-decoder.onnx
-Encoder processing time: 239 ms
-Decoder processing time: 125 ms
+Encoder processing time: 234 ms
+Decoder processing time: 144 ms
 Detected language: en
-Decoder processing time: 31 ms
-Decoder processing time: 30 ms
-Decoder processing time: 32 ms
-Decoder processing time: 29 ms
-Decoder processing time: 29 ms
-Decoder processing time: 29 ms
-Decoder processing time: 27 ms
-Decoder processing time: 25 ms
+Decoder processing time: 49 ms
+Decoder processing time: 37 ms
+Decoder processing time: 44 ms
+Decoder processing time: 34 ms
+Decoder processing time: 43 ms
 Decoder processing time: 35 ms
-Decoder processing time: 27 ms
+Decoder processing time: 37 ms
+Decoder processing time: 32 ms
+Decoder processing time: 37 ms
+Decoder processing time: 32 ms
 
 Transcribed:
  How are you doing today?
@@ -256,7 +256,7 @@ Whisper decoder model: small-decoder.onnx
 Whisper tokens: small-tokens.txt
 Inference device: DEFAULT
 Provider: OpenVINOExecutionProvider
-  Library: C:\Program Files\WindowsApps\MicrosoftCorporationII.WinML.Intel.OpenVINO.EP.1.8_1.8.74.0_x64__8wekyb3d8bbwe\ExecutionProvider\onnxruntime_providers_openvino_plugin.dll
+  Library: C:\Program Files\WindowsApps\MicrosoftCorporationII.WinML.Intel.OpenVINO.EP.1.8_1.8.95.0_x64__8wekyb3d8bbwe\ExecutionProvider\onnxruntime_providers_openvino_plugin.dll
   Registered!
 
 Available EP devices (8):
@@ -276,19 +276,19 @@ Encoder input name 0: mel
 Encoder output name 0: n_layer_cross_k
 Encoder output name 1: n_layer_cross_v
 Decoder path: small-decoder.onnx
-Encoder processing time: 855 ms
-Decoder processing time: 89 ms
+Encoder processing time: 826 ms
+Decoder processing time: 88 ms
 Detected language: en
-Decoder processing time: 92 ms
-Decoder processing time: 48 ms
-Decoder processing time: 46 ms
-Decoder processing time: 47 ms
-Decoder processing time: 47 ms
+Decoder processing time: 81 ms
+Decoder processing time: 43 ms
+Decoder processing time: 42 ms
+Decoder processing time: 43 ms
 Decoder processing time: 44 ms
-Decoder processing time: 47 ms
-Decoder processing time: 46 ms
-Decoder processing time: 53 ms
-Decoder processing time: 47 ms
+Decoder processing time: 43 ms
+Decoder processing time: 43 ms
+Decoder processing time: 44 ms
+Decoder processing time: 43 ms
+Decoder processing time: 44 ms
 
 Transcribed:
  How are you doing today?
@@ -296,6 +296,8 @@ Transcribed:
 Processing complete. Exiting.
 Successfully unregistered: OpenVINOExecutionProvider
 
+C:\GitHub\whisper-ovep-cpp\package>
+C:\GitHub\whisper-ovep-cpp\package>
 C:\GitHub\whisper-ovep-cpp\package>
 C:\GitHub\whisper-ovep-cpp\package>
 C:\GitHub\whisper-ovep-cpp\package>

@@ -11,7 +11,7 @@ set(CMAKE_CXX_STANDARD 20)
 # ---------------------------------------------------------
 # Version variables - change here to switch package versions
 # ---------------------------------------------------------
-set(WINML_VERSION "2.0.300")
+set(WINML_VERSION "2.1.74")
 
 # Paths to ONNX Runtime, libsndfile, libtorch and KNF
 set(ONNXRUNTIME_DIR "${CMAKE_SOURCE_DIR}/onnxruntime")
