@@ -6,8 +6,8 @@ https://github.com/k2-fsa/sherpa-onnx/tree/master/scripts/whisper
 
 # Features
 This pipeline supports WindowsML 2.0
-* No need to install ONNX runtime separately as Windows ML already contains ONNX Runtime
-* No need to install OpenVINO Execution Provider manually as Windows ML can download and manage it automatically.
+* No need to install ONNX runtime separately as Windows ML already contains ONNX Runtime (included in Microsoft.Windows.AI.MachineLearning)
+* No need to install OpenVINO Execution Provider (OVEP) manually as Windows ML can automatically download compatible OVEP per ONNX runtime version.
 
 # Quick Steps
 ## Prepare models

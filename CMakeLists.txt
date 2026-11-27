@@ -10,11 +10,12 @@ set(CMAKE_CXX_STANDARD 20)
 
 # ---------------------------------------------------------
 # Version variables - change here to switch package versions
+# Check dependencies: https://www.nuget.org/packages/Microsoft.WindowsAppSDK.ML#dependencies-body-tab
 # ---------------------------------------------------------
-set(WINML_VERSION "2.1.74")
+set(WINML_VERSION "2.7.0")
+set(WINAIML_VERSION "2.5.96")
 
 # Paths to ONNX Runtime, libsndfile, libtorch and KNF
-set(ONNXRUNTIME_DIR "${CMAKE_SOURCE_DIR}/onnxruntime")
 set(LIBSNDFILE_DIR "${CMAKE_SOURCE_DIR}/libsndfile")
 set(LIBTORCH_DIR "${CMAKE_SOURCE_DIR}/libtorch")
 set(KNF_DIR "${CMAKE_SOURCE_DIR}/kaldi_native_fbank")
@@ -53,8 +54,8 @@ if(NOT EXISTS "${WINML_DIR}")
 endif()
 
 # Find libraries
-find_library(WINML_LIB Microsoft.Windows.AI.MachineLearning PATHS ${WINML_DIR}/Microsoft.Windows.AI.MachineLearning.${WINML_VERSION}/lib/native/x64)
-find_library(ONNXRUNTIME_LIB onnxruntime PATHS ${WINML_DIR}/Microsoft.Windows.AI.MachineLearning.${WINML_VERSION}/lib/native/x64)
+find_library(WINML_LIB Microsoft.Windows.AI.MachineLearning PATHS ${WINML_DIR}/Microsoft.Windows.AI.MachineLearning.${WINAIML_VERSION}/lib/native/x64)
+find_library(ONNXRUNTIME_LIB onnxruntime PATHS ${WINML_DIR}/Microsoft.Windows.AI.MachineLearning.${WINAIML_VERSION}/lib/native/x64)
 find_library(LIBSNDFILE_LIB sndfile PATHS ${LIBSNDFILE_DIR}/lib)
 find_library(KNF_LIB kaldi-native-fbank-core PATHS ${KNF_DIR}/lib)
 
@@ -95,8 +96,8 @@ list(APPEND CMAKE_PREFIX_PATH "${LIBTORCH_DIR}/share/cmake/Torch")
 find_package(Torch REQUIRED)
 
 # Include directories
-include_directories(${WINML_DIR}/Microsoft.Windows.AI.MachineLearning.${WINML_VERSION}/include)
-include_directories(${WINML_DIR}/Microsoft.Windows.AI.MachineLearning.${WINML_VERSION}/include/winml)
+include_directories(${WINML_DIR}/Microsoft.Windows.AI.MachineLearning.${WINAIML_VERSION}/include)
+include_directories(${WINML_DIR}/Microsoft.Windows.AI.MachineLearning.${WINAIML_VERSION}/include/winml)
 include_directories(${LIBSNDFILE_DIR}/include)
 include_directories(${KNF_DIR}/include)
 include_directories(include)
@@ -145,5 +146,5 @@ file(GLOB_RECURSE LIBTORCH_DLLS "${LIBTORCH_DIR}/*.dll")
 install(FILES ${LIBTORCH_DLLS} DESTINATION .)
 
 # WinML DLLs
-file(GLOB_RECURSE WINML_DLLS "${WINML_DIR}/Microsoft.Windows.AI.MachineLearning.${WINML_VERSION}/runtimes/win-x64/native/*.dll")
+file(GLOB_RECURSE WINML_DLLS "${WINML_DIR}/Microsoft.Windows.AI.MachineLearning.${WINAIML_VERSION}/runtimes/win-x64/native/*.dll")
 install(FILES ${WINML_DLLS} DESTINATION .)
